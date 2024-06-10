@@ -36,6 +36,10 @@ Based on:
 - 404:
   - https://stackoverflow.com/a/66311478
   - https://stackoverflow.com/a/78382676
+- Language Detection:
+  - https://locize.com/blog/next-i18n-static/
+  - https://github.com/i18next/next-language-detector/
+  - https://github.com/i18next/next-language-detector/tree/main/examples/basic
 
 ## Learn More
 

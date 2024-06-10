@@ -1,5 +1,8 @@
-import { redirect } from "next/navigation";
+"use client";
+
+import { useRedirect } from "../lib/redirect";
 
 export default function RootPage() {
-  redirect("/en");
+	useRedirect();
+	return <></>;
 }

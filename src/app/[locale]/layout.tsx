@@ -1,16 +1,14 @@
 import Providers from "./providers";
-
-const LOCALES = ["en", "es", "pt"];
+import i18nextConfig from "../../../next-i18next.config";
 
 export async function generateStaticParams() {
-	return LOCALES.map((locale) => ({
+	return i18nextConfig.i18n.locales.map((locale) => ({
 		locale
 	}));
 }
 
 async function getMessages(locale: string) {
 	const messageModule = await import(`@/i18n/messages/${locale}.json`);
-
 	return messageModule.default;
 }
 
