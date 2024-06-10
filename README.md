@@ -20,6 +20,23 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Configure Page not found (404)
+
+1. Add 404.html file at root_level
+2. Add this line in the `.htaccess` file: `ErrorDocument 404 /404.html`
+
+**Note:** Both .htaccess and 404.html files are at root_level
+
+## Thanks
+
+Based on:
+
+- https://medium.com/@kitagolda/next-js-v13-multilingual-server-components-adding-internationalization-in-a-statically-exported-a94e1c927d49 (https://github.com/kitagolda/static-nextjs-i18n)
+- https://medium.com/@ferlat.simon/internationalize-your-next-js-static-site-with-app-router-772f9f16e63 (https://github.com/RockyStrongo/next-i18n-static/)
+- 404:
+  - https://stackoverflow.com/a/66311478
+  - https://stackoverflow.com/a/78382676
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
